@@ -5,7 +5,7 @@ standard tools.
 
 ## Installation
 ```shell
-go install github.com/SeventhBeam/golang_tools/aws_auth
+go install github.com/SeventhBeam/golang_tools/aws_auth@latest
 ```
 
 ## Usage
