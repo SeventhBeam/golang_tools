@@ -29,7 +29,7 @@ var (
 			dest := string(sesInp)
 			dest = promptGetInput(promptContent{
 				errorMsg: "AWS Profile to get session token with",
-				label:    fmt.Sprintf("Profile [%s]", dest),
+				label:    fmt.Sprintf("Source Profile [%s]", dest),
 				fallback: &dest,
 			})
 			err = os.WriteFile(home+"/.aws/.session", []byte(dest), os.ModePerm)
@@ -40,7 +40,7 @@ var (
 			profile := "default"
 			profile = promptGetInput(promptContent{
 				errorMsg: "AWS Profile to store token in",
-				label:    fmt.Sprintf("Profile [%s]", profile),
+				label:    fmt.Sprintf("Dest Profile [%s]", profile),
 				fallback: &profile,
 			})
 
